@@ -14,7 +14,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     // Validación de datos
     if (empty($name) || empty($email) || empty($message) || !filter_var($email, FILTER_VALIDATE_EMAIL)) {
         http_response_code(400);
-        echo json_encode(['status' => 'error', 'message' => 'Datos inválidos.']);
+        echo json_encode(['status' => 'error', 'message' => 'Datos invalidos.']);
         exit;
     }
     // Enviar correo

@@ -19,7 +19,7 @@ Content-Type: "application/json"
   "email": "remitente@gmail.com",
   "message": ""
 }
-###  "status": "error",  "message": "Datos inv\u00e1lidos."
+###  "status": "error",  "message": "Datos invalidos."
 
 
 ### PRUEBA DE CORREO CON MAIL ERRONEO
@@ -31,7 +31,7 @@ Content-Type: "application/json"
   "email": "remitentegmail.com",
   "message": "Mensaje de prueba 3."
 }
-###   "status": "error",  "message": "Datos inv\u00e1lidos."
+###   "status": "error",  "message": "Datos invalidos."
 
 
 ### PRUEBA DE CORREO CON TODOS LOS DATOS FALTANTES
@@ -44,4 +44,4 @@ Content-Type: "application/json"
   "message": ""
 }
 
-###   "status": "error",  "message": "Datos inv\u00e1lidos."
+###   "status": "error",  "message": "Datos invalidos."

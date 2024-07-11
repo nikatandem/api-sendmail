@@ -1,14 +1,16 @@
 # API de Envío de Correos
 
 Esta API permite a los usuarios enviar correos electrónicos mediante una solicitud HTTP con el método POST. La API está diseñada para recibir datos en formato JSON y enviar un correo electrónico al webmaster.
+## Instalación
+Para poder utilizar esta aplicación es necesario desgargar el repositorio de GitHub. Una vez descargado se debe ubicar en la carpeta "htdocs" de "xampp" en el Disco local C. Es necesario tener instalado el servidor Apache.
 
+## Cómo utilizar la API
+### Cómo se realiza una solicitud
 
-## Cómo se realiza una solicitud
-
-### Formato de la Solicitud
+#### Formato de la Solicitud
 La solicitud debe ser de tipo POST y el cuerpo debe estar en formato JSON.
 
-### Cuerpo de la Solicitud
+#### Cuerpo de la Solicitud
 ```json
 
 POST http://dominio/api/v1/endpoint-webservice/
@@ -20,9 +22,9 @@ Content-Type: "application/json"
   "message": "Mensaje a enviar"
 }
 ````
-## Respuestas que se pueden recibir
+### Respuestas que se pueden recibir
 
-### Respuesta exitosa
+#### Respuesta exitosa
 Cuando todos los datos están completos y son correctos la respuesta es exitosa y se muestra así:
 ````json
 {
@@ -31,7 +33,7 @@ Cuando todos los datos están completos y son correctos la respuesta es exitosa 
 }
 ````
 
-### Respuesta inválida
+#### Respuesta inválida
 Cuando los datos están incompletos o no son correctos devuelve esta respuesta: 
 ````json
 {
@@ -40,7 +42,7 @@ Cuando los datos están incompletos o no son correctos devuelve esta respuesta:
 }
 ````
 
-### Respuesta de Error
+#### Respuesta de Error
 Cuando hay un error de conexión con el servidor la respuesta que devuelve es la siguiente:
 ````json
 {

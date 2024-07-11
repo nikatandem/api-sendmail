@@ -1,4 +1,4 @@
-### PRUEBA DE CORREO EXITOSO
+### 1. PRUEBA DE CORREO EXITOSO
 POST http://localhost/api/v1/endpoint-webservice/
 Content-Type: "application/json"
 
@@ -10,7 +10,7 @@ Content-Type: "application/json"
 ###  "status": "success", "message": "Correo enviado correctamente."
  
 
-### PRUEBA DE CORREO CON ALGUN DATO QUE FALTA
+### 2. PRUEBA DE CORREO CON ALGUN DATO QUE FALTA
 POST http://localhost/api/v1/endpoint-webservice/
 Content-Type: "application/json"
 
@@ -22,7 +22,7 @@ Content-Type: "application/json"
 ###  "status": "error",  "message": "Datos invalidos."
 
 
-### PRUEBA DE CORREO CON MAIL ERRONEO
+### 3. PRUEBA DE CORREO CON MAIL ERRONEO
 POST http://localhost/api/v1/endpoint-webservice/
 Content-Type: "application/json"
 
@@ -34,7 +34,7 @@ Content-Type: "application/json"
 ###   "status": "error",  "message": "Datos invalidos."
 
 
-### PRUEBA DE CORREO CON TODOS LOS DATOS FALTANTES
+### 4. PRUEBA DE CORREO CON TODOS LOS DATOS FALTANTES
 POST http://localhost/api/v1/endpoint-webservice/
 Content-Type: "application/json"
 
